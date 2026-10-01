@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="frg_container_padding">24dp</dimen>
+    <dimen name="frg_title_text_size">24sp</dimen>
+    <dimen name="label_text_size">16sp</dimen>
+    <dimen name="margin_bottom_large">30dp</dimen>
+    <dimen name="margin_bottom_small">16dp</dimen>
+</resources>

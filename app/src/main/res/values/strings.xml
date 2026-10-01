@@ -1,0 +1,10 @@
+<resources>
+    <string name="frg_login_title">Iniciar sesión</string>
+    <string name="frg_login_username">Nombre de usuario</string>
+    <string name="frg_login_username_hint">Ingresa tu nombre de usuario</string>
+    <string name="frg_login_password">Contraseña</string>
+    <string name="frg_login_password_hint">Ingresa tu contraseña</string>
+    <string name="frg_login_recover_password">Recuperar contraseña</string>
+    <string name="frg_login_login">Iniciar sesión</string>
+    <string name="frg_login_register">Regístrate aquí</string>
+</resources>
