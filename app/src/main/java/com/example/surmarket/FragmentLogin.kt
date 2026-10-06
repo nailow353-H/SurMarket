@@ -80,20 +80,22 @@ class FragmentLogin : Fragment() {
 
         if (user.isEmpty()) {
             etxUsername.error = getString(R.string.user_empty)
-            res = false
+            res = false // ¡ESTA ES LA CORRECCIÓN![cite: 10]
         } else {
-            etxUsername.error = null // Limpia el error si ya se escribió algo
+            etxUsername.error = null
         }
 
         if (password.isEmpty()) {
             etxPassword.error = getString(R.string.password_empty)
-            res = false
+            res = false // ¡ESTA ES LA CORRECCIÓN![cite: 10]
         } else {
             etxPassword.error = null
         }
 
         return res
     }
+
+
     //base de datos
     private fun verifyCredentials(user: String, password: String): Boolean {
 
