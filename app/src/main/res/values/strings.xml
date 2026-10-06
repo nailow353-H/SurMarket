@@ -7,4 +7,23 @@
     <string name="frg_login_recover_password">Recuperar contraseña</string>
     <string name="frg_login_login">Iniciar sesión</string>
     <string name="frg_login_register">Regístrate aquí</string>
+
+    <!-- Mensajes para validación de Login -->
+    <string name="welcome_login">Bienvenido a Surmarket</string>
+    <string name="login_error">Usuario o contraseña inválidos</string>
+    <string name="user_empty">Ingrese su nombre de usuario</string>
+    <string name="password_empty">Ingrese su contraseña</string>
+
+
+    <string name="frg_register_username">Nombre de usuario</string>
+    <string name="frg_register_title">Registrarse</string>
+    <string name="frg_register_fullname">Nombre completo</string>
+    <string name="frg_register_fullname_hint">Ingresa tu nombre completo</string>
+    <string name="frg_register_email">Correo electrónico</string>
+    <string name="frg_register_email_hint">Ingresa tu correo</string>
+    <string name="frg_register_phone">Número de celular</string>
+    <string name="frg_register_phone_hint">Ingresa tu número de celular</string>
+    <string name="btn_frg_register_submit">Crear cuenta</string>
+
+
 </resources>
