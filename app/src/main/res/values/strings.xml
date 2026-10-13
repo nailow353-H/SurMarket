@@ -14,6 +14,12 @@
     <string name="user_empty">Ingrese su nombre de usuario</string>
     <string name="password_empty">Ingrese su contraseña</string>
 
+    <!-- Textos para Fragment Product List -->
+    <string name="frg_products_list_title">Tienda virtual Surmarket</string>
+    <string name="shopping_cart">Carrito de compras</string>
+    <string name="search">Buscar producto</string>
+    <string name="btn_product_list_add">Añadir producto</string>
+
 
     <string name="frg_register_username">Nombre de usuario</string>
     <string name="frg_register_title">Registrarse</string>
@@ -24,6 +30,7 @@
     <string name="frg_register_phone">Número de celular</string>
     <string name="frg_register_phone_hint">Ingresa tu número de celular</string>
     <string name="btn_frg_register_submit">Crear cuenta</string>
+    <string name="app_name">SurMarket\n</string>
 
 
 </resources>

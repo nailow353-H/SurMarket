@@ -4,4 +4,10 @@
     <dimen name="label_text_size">16sp</dimen>
     <dimen name="margin_bottom_large">30dp</dimen>
     <dimen name="margin_bottom_small">16dp</dimen>
+
+    <!-- Medidas para Fragment Product List -->
+    <dimen name="title_height">60dp</dimen>
+    <dimen name="image_view_icon_size">24dp</dimen>
+    <dimen name="image_view_icon_padding">4dp</dimen>
+    <dimen name="frg_label_text_size">16sp</dimen>
 </resources>
