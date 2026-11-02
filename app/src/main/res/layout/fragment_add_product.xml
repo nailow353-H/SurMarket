@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".FragmentAddProduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/frg_padding">
+
+        <!-- Contenedor de la Imagen -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_image_height"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="2dp">
+
+            <ImageView
+                android:id="@+id/imb_frg_add_product_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/product_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_surmarket" /> <!-- Asegúrate de que este sea tu logo -->
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botón Añadir Imagen -->
+        <Button
+            android:id="@+id/btn_frg_add_product_add_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/btn_add_image" />
+
+        <!-- Nombre del Producto -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etx_frg_add_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPersonName" />
+
+        <!-- Precio -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_price"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etx_frg_add_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:inputType="numberDecimal" />
+
+        <!-- Cantidad en Stock -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_stock"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etx_frg_add_product_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:inputType="number" />
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_description"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etx_frg_add_product_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_multiline_height"
+            android:layout_marginBottom="16dp"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+        <!-- Categorías (ChipGroup único) -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chg_frg_add_product_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_men"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_men" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_women"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_women" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_children"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_children" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_baby"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_baby" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_shoes"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_shoes" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_accessories"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_accessories" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_others"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_others" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Disponibilidad (ChipGroup de selección única) -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chg_frg_add_product_availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_available"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/available" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chp_frg_add_product_not_available"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_available" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Botón Añadir Producto -->
+        <Button
+            android:id="@+id/btn_frg_add_product_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_add_product" />
+
+        <!-- Espaciador final para permitir hacer scroll completo -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+</ScrollView>

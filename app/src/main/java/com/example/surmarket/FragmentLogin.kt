@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController // Importación obligatoria para navegar[cite: 2]
 
 class FragmentLogin : Fragment() {
 
@@ -50,7 +51,8 @@ class FragmentLogin : Fragment() {
         }
 
         btnRegister.setOnClickListener {
-            // aqui tiene q ir registro
+            // Navegar al fragmento de registro
+            findNavController().navigate(R.id.action_login_to_register)
         }
     }
 
@@ -69,6 +71,8 @@ class FragmentLogin : Fragment() {
         // Verificamos credenciales
         if (verifyCredentials(user, password)) {
             Toast.makeText(requireContext(), getString(R.string.welcome_login), Toast.LENGTH_SHORT).show()
+            // Redirige a la pantalla de lista de productos
+            findNavController().navigate(R.id.action_login_to_product_list)
         } else {
             Toast.makeText(requireContext(), getString(R.string.login_error), Toast.LENGTH_SHORT).show()
         }
@@ -80,14 +84,14 @@ class FragmentLogin : Fragment() {
 
         if (user.isEmpty()) {
             etxUsername.error = getString(R.string.user_empty)
-            res = false // ¡ESTA ES LA CORRECCIÓN![cite: 10]
+            res = false
         } else {
             etxUsername.error = null
         }
 
         if (password.isEmpty()) {
             etxPassword.error = getString(R.string.password_empty)
-            res = false // ¡ESTA ES LA CORRECCIÓN![cite: 10]
+            res = false
         } else {
             etxPassword.error = null
         }
@@ -98,7 +102,6 @@ class FragmentLogin : Fragment() {
 
     //base de datos
     private fun verifyCredentials(user: String, password: String): Boolean {
-
         return user == "admin" && password == "123456"
     }
 }

@@ -10,7 +10,7 @@
     <!-- 1. Encabezado: Título y Carrito (Horizontal) -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/title_height"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:paddingHorizontal="16dp">
@@ -21,18 +21,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/frg_products_list_title"
-            android:textSize="@dimen/frg_title_text_size"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imb_frg_products_list_shopping_cart"
-            android:layout_width="@dimen/image_view_icon_size"
-            android:layout_height="@dimen/image_view_icon_size"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_shopping_cart"
             android:contentDescription="@string/shopping_cart"
             android:clickable="true"
             android:focusable="true"
-            android:padding="@dimen/image_view_icon_padding" />
+            android:padding="4dp" />
     </LinearLayout>
 
     <!-- 2. Barra de Búsqueda (CardView con LinearLayout Horizontal) -->
@@ -54,9 +54,9 @@
 
             <ImageView
                 android:id="@+id/imb_frg_products_list_search"
-                android:layout_width="@dimen/image_view_icon_size"
-                android:layout_height="@dimen/image_view_icon_size"
-                android:src="@android:drawable/ic_menu_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
                 android:contentDescription="@string/search" />
 
             <EditText
@@ -69,19 +69,26 @@
                 android:maxLines="1"
                 android:background="@android:color/transparent"
                 android:padding="12dp"
-                android:textSize="@dimen/frg_label_text_size" />
+                android:textSize="16sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- 3. Botón Añadir Producto -->
+    <!-- 3. Botón Añadir Producto[cite: 7] -->
     <Button
         android:id="@+id/btn_frg_products_list_add_product"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:text="@string/btn_product_list_add"
-        android:textSize="@dimen/frg_label_text_size" />
+        android:textSize="16sp" />
 
-    <!-- Nota: En el próximo video el ingeniero añadirá el RecyclerView aquí abajo para la lista -->
+    <!-- 4. RecyclerView para la lista dinámica de productos -->
+    <!-- Se usa height "0dp" y weight "1" para que ocupe todo el espacio sobrante de la pantalla -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_frg_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_product_list" />
 
 </LinearLayout>
