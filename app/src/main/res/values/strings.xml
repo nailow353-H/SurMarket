@@ -37,6 +37,8 @@
     <string name="price">Precio</string>
     <string name="price_format">Precio: %1$s</string>
     <string name="add_cart">Adicionado al carrito</string>
+    <string name="label_add_product_fragment">Añadir producto</string>
+    <string name="add_product">Añadir nuevo producto</string>
 
     <!-- Textos para Añadir Producto -->
     <string name="product_image">Imagen del producto</string>

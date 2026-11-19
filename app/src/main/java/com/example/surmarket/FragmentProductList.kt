@@ -93,7 +93,11 @@ class FragmentProductList : Fragment() {
         // Evento clic del botón "Añadir producto"
         btnAddProduct.setOnClickListener {
             // Muestra el mensaje
-            Toast.makeText(requireContext(), "Añadir nuevo producto", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                getString(R.string.add_product),
+                Toast.LENGTH_SHORT
+            ).show()
             
             // Navega a la pantalla del formulario
             findNavController().navigate(R.id.action_products_list_to_add_product)

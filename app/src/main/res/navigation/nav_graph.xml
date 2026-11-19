@@ -45,7 +45,7 @@
     <fragment
         android:id="@+id/add_product_fragment"
         android:name="com.example.surmarket.FragmentAddProduct"
-        android:label="Añadir producto"
+        android:label="@string/label_add_product_fragment"
         tools:layout="@layout/fragment_add_product" />
 
 </navigation>

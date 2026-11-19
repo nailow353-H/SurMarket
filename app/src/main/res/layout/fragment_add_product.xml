@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="@dimen/frg_margin_top"
         android:padding="@dimen/frg_padding">
 
         <!-- Contenedor de la Imagen -->
@@ -173,12 +174,13 @@
             android:id="@+id/btn_frg_add_product_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin_start"
             android:text="@string/btn_add_product" />
 
         <!-- Espaciador final para permitir hacer scroll completo -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="80dp" />
+            android:layout_height="@dimen/frg_margin_top" />
 
     </LinearLayout>
 </ScrollView>
