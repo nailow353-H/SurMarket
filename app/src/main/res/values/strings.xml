@@ -62,5 +62,42 @@
     <string name="not_available">No disponible</string>
     <string name="btn_add_product">Añadir producto</string>
 
+    <!-- Bottom Navigation -->
+    <string name="home">Inicio</string>
+    <string name="cart">Carrito</string>
+    <string name="profile">Perfil</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="cart_fragment">Cart Fragment</string>
+
+    <!-- Perfil de usuario -->
+    <string name="profile_image">Foto de perfil</string>
+    <string name="profile_username_default">admin</string>
+    <string name="profile_user_id_default">ID: 1</string>
+
+    <string name="email_label">Correo electrónico</string>
+    <string name="email_default">admin@surmarket.com</string>
+
+    <string name="name_label">Nombre completo</string>
+    <string name="name_default">Administrador</string>
+
+    <string name="phone_label">Teléfono</string>
+    <string name="phone_default">00000000</string>
+
+    <string name="address_label">Dirección</string>
+    <string name="address_default">Sin dirección</string>
+
+    <string name="entry_date_label">Fecha de ingreso</string>
+    <string name="entry_date_default">2026-01-01</string>
+
+    <string name="last_access_label">Último acceso</string>
+    <string name="last_access_default">Hoy</string>
+
+    <string name="groups_label">Grupos</string>
+    <string name="groups_default">Usuarios</string>
+
+    <string name="permissions_label">Permisos</string>
+    <string name="permissions_default">Estándar</string>
+
+    <string name="btn_profile_change_password">Cambiar contraseña</string>
 
 </resources>

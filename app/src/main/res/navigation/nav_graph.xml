@@ -48,4 +48,16 @@
         android:label="@string/label_add_product_fragment"
         tools:layout="@layout/fragment_add_product" />
 
+    <fragment
+        android:id="@+id/cart_fragment"
+        android:name="com.example.surmarket.FragmentCart"
+        android:label="@string/cart_fragment"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.surmarket.FragmentProfile"
+        android:label="@string/profile_fragment"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>

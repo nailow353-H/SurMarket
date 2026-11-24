@@ -18,4 +18,11 @@
     <dimen name="frg_margin_top">16dp</dimen>
     <dimen name="item_margin_start">12dp</dimen>
 
+    <dimen name="fragment_profile_padding">16dp</dimen>
+    <dimen name="title_margin_top">20dp</dimen>
+    <dimen name="profile_avatar_size">120dp</dimen>
+    <dimen name="profile_card_radius">8dp</dimen>
+    <dimen name="profile_icon_size">24dp</dimen>
+    <dimen name="frg_button_size">16sp</dimen>
+
 </resources>
